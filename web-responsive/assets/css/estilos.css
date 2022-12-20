@@ -1,0 +1,459 @@
+/* Configuraciones globales */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+html {
+    background-color: #fff;
+    color: rgb(62, 62, 62);
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 300; /*Muestra el grosor con que se muestran las letras del texto*/
+    font-size: 20px; /*tamaño ed letra de li*/
+    text-rendering: optimizeLegibility; /*calidad del texto sobre la velocidad*/
+}
+
+/*  SECTION-DESCRIPCION 4------------*/
+
+section {
+    padding: 80px 0; /*aqui da espacio al elemento del parrafo*/
+}
+
+
+/*    Encabezados    */
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;  /*el % es para que cuando reduzca el tamaño de la ´pag. no se deformen las letras*/
+    word-spacing: 4px;  /*espacio de las palabras*/
+    letter-spacing: 1px;
+}
+
+/*SECTION-DESCRIPCION 2----------*/
+
+h2 {  /*en este h2 centra el titulo de Web Design*/
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/*SECTION-DESCRIPCION 3----------*/
+
+h2:after {  /*este elemento es para agregar una linea de separacion entre el titulo de Web Design y el texto*/
+    display: block;  /*para que sea de bloque este elemento*/
+    height: 2px;
+    background-color: rgb(15, 99, 167);
+    content: "";   /*ingresar contenido generado*/
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+/* nav */
+
+
+/* Home-container */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)), url(../images/background.jpg); /*fondo de la imagen y su color de transparencia. La url nos dirige a la imagen que se pondrá*/
+    background-size: cover;  /*es para la imagen se adapte a toda la página web*/
+    background-position: center;  /*es para centerar la imagen*/
+    height: 100vh;
+}
+
+.logo {
+    height: 200px;
+    width: auto;
+    float: left;
+    margin-left: 90px;
+}
+
+.nav {   /*esto es para li y h1*/
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+    margin-right: 70px;
+}
+
+.nav li {  /*esto es para acceder al li*/
+    display: inline-block;  /*aqui hay 2 propiedades*/
+    margin-left: 40px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;  /*color de la lista o elemento <li>*/
+    font-size: 90%;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    transition: border-bottom 0.2s; /*borde debajo del elemento*/
+}
+
+.nav li a:hover {
+    border-bottom: 2px solid rgb(15, 99, 167);
+}
+
+/*---------------------------*/
+
+.home-container {  /*elemento h1*/
+    display: inline-block;
+    margin-left: 50%;
+    margin-top: 100px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    transform: translate(-50%, -50%);  /*con esto mueves el h1 junto con las etiquetas a*/
+}
+
+.btn, /*botón Contacto y Ver más*/
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;  /*ancho de las palabras*/
+    text-decoration: none;
+    border-radius: 200px;  /*para que redonde el elemento*/
+    border: 2px solid rgb(15, 99, 167);
+    color: white;
+    margin-right: 5px;  /*para que no se vean tan acercados los elementos*/
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.btn-more:hover {
+    background-color: rgb(239, 246, 252);
+    color: black;
+}
+
+input[type=submit] {
+    color: black;
+}
+
+.btn-contact:hover,
+input[type=submit]:hover {
+    background-color: rgb(15, 99, 167);
+}
+
+
+/* Section-Description */
+/*SECTION-DESCRIPCION 1--------*/
+.text-center {  /*con esto centramos el texto de lorem*/
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+
+/*    SECTION-PLANS    */
+
+.section-plans {
+    background-color: #afafaf;
+}
+
+.plan-content {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+    text-align: center;
+}
+
+.plan-content div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.btn-Ingresa {
+    color: black;
+}
+
+.btn-Ingresa:hover {
+    background-color: rgb(15, 99, 167);
+    color: white;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: rgb(15, 99, 167);
+}
+
+.plan-content ul {
+    list-style: none;
+}
+
+.plan-content ul li {
+    padding: 5px 0;
+}
+
+
+.plan-price-discount {
+    color: red;
+} 
+
+
+/* Section-Image */
+
+.projects-image {
+    list-style: none;
+    width: 100%;
+}
+
+.projects-image li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity0.5s;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+}
+
+.photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+
+/* 
+Contact */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100%;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+/* image footer */
+
+.section-img-footer {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/background.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+
+/* footer */
+
+footer {
+    background-color: rgb(31, 29, 29);
+    padding: 30px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.footer-nav li a,
+.social-links li,
+.social-links li a {
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.fa-facebook-square {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+.fa-twitter:hover {
+    color: #00aced;
+}
+
+.fa-google-plus-g:hover {
+    color: #dd4b39;
+}
+
+.fa-instagram:hover {
+    color: #517fa4;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* 
+media queries */
+
+
+/* tablet grandes de 1023px a 1200px */
+
+@media only screen and (max-width:1200px) {
+    .home-container {
+        width: 100%;
+        padding: 0 2%;
+    }
+    .row {
+        padding: 0;
+    }
+}
+
+
+/* tablet pequeñas a tablet grandes de 768px a 1023px */
+
+@media only screen and (max-width:1023px) {
+    body {
+        font-size: 18px;
+    }
+    section {
+        padding: 60px 0;
+    }
+    .text-center {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .plan-content {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .plan-price {
+        font-size: 250%;
+    }
+    .contact-form {
+        width: 80%;
+    }
+}
+
+
+/* telefonos pequeños a tablet pequeñas de 481px a 767px*/
+
+@media only screen and (max-width:767px) {
+    body {
+        font-size: 16px;
+    }
+    section {
+        padding: 30px 0;
+    }
+    .row,
+    .home-container {
+        padding: 0 4%;
+    }
+    .col {
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    h1 {
+        font-size: 180%;
+    }
+    h2 {
+        font-size: 150%;
+    }
+    .text-center {
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+
+
+/* telefonos pequeños de 0 a 480px */
+
+@media only screen and (max-width:480px) {
+    section {
+        padding: 25px 0;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .home-container {
+        margin-top: 140px;
+    }
+}
